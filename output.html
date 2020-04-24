@@ -1,0 +1,65 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>QSOFT DENOVO</title>
+<!--
+
+Template 2097 Pop
+
+http://www.tooplate.com/view/2097-pop
+
+-->
+<!-- load CSS --> <!-- Google web font "Open Sans" -->
+<link rel="stylesheet" href="css/bootstrap.min.css">                                  <!-- https://getbootstrap.com/ -->
+<link rel="stylesheet" href="fontawesome/css/fontawesome-all.min.css">
+<link rel="stylesheet" href="css/tooplate-style.css">                               <!-- Templatemo style -->
+<link rel="stylesheet" href="css/custom.css">                                 <!-- Templatemo style -->
+
+    <script>document.documentElement.className="js";var supportsCssVars=function(){var e,t=document.createElement("style");return t.innerHTML="root: { --tmp-var: bold; }",document.head.appendChild(t),e=!!(window.CSS&&window.CSS.supports&&window.CSS.supports("font-weight","var(--tmp-var)")),t.parentNode.removeChild(t),e};supportsCssVars()||alert("Please view this in a modern browser such as latest version of Chrome or Microsoft Edge.");</script>
+</head>
+
+<body onload="getRecording()">
+
+    <a href="index.html" style="background-color:#1F386E" class="small tm-copyright-text">Home</a>
+    <a href="record.html" style="background-color:#1F386E" class="small tm-copyright-text">Record</a>
+    <a href="contact.html" style="background-color:#1F386E" class="small tm-copyright-text">Contact</a>
+    <div id="tm-bg"></div>
+
+    <div id="tm-wrap">
+        <div style="margin-left:15%">
+            <div class="container tm-site-header-container">
+                <div class="row">
+                    <div style="">
+                        <div class="pt-sm-4 pb-sm-4 pl-sm-5 pr-sm-5 pt-2 pb-2 pl-3 pr-3">
+                            <div class="row mb-3">
+                                <div class="col-12">
+                                    <h2 class="tm-page-title text-center">Recording</h2>
+                                </div>
+                            </div>
+                            <div style="width:100%;height:100%;">
+                                <textarea style="text-align:left;" rows="15" cols="100" id="recorded"></textarea>
+                            </div>
+                        </div>
+                </div>
+            </div>
+            <footer>
+                <p style="background-color:#1F386E" class="small tm-copyright-text">Copyright &copy; <span class="tm-current-year"></span> Q-SOFT DENOVO</p>
+            </footer>
+        </div> <!-- .tm-main-content -->
+    </div>
+    <!-- load JS -->
+    <script src="js/jquery-3.2.1.slim.min.js"></script>                <!-- http://kenwheeler.github.io/slick/ -->
+    <script src="js/anime.min.js"></script>
+    <script src="js/custom.js"></script>
+    <script type="text/javascript">
+        function getRecording() {
+            var output = localStorage.getItem("Output");
+            console.log(output);
+            document.getElementById("recorded").innerHTML = output;
+        }
+    </script>
+</body>
+</html>
